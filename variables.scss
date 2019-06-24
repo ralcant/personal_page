@@ -1,0 +1,30 @@
+$color: black;
+%nice_border{
+    border: 4px solid $color;
+}
+.row{
+    div{
+        @extend %nice_border;
+        padding:20px;
+        background-color: teal;
+        font-weight: bold;
+    }
+}
+
+#memes{
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto;
+    text-align: center;
+    img{
+        @extend %nice_border;
+        width:400px;
+        height:400px;
+    }
+}
+#contact{
+    p{
+        text-align:center;
+    }
+}
+
